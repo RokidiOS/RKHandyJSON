@@ -1,42 +1,32 @@
 #
-# Be sure to run `pod lib lint RKHandyJSON.podspec' to ensure this is a
-# valid spec before submitting.
+#  Be sure to run `pod spec lint RKIHandyJSON.podspec' to ensure this is a
+#  valid spec and to remove all comments including this before submitting the spec.
 #
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
+#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
-Pod::Spec.new do |s|
-  s.name             = 'RKIHandyJSON'
-  s.version          = '0.1.2'
-  s.summary          = 'A short description of RKHandyJSON.'
+Pod::Spec.new do |spec|
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  spec.name         = "RKIHandyJSON"
+  
+  spec.version      = "0.1.3"
+  
+  spec.summary      = "A short description of RKIHandyJSON."
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  spec.description  = <<-DESC
+                   DESC
 
-  s.homepage         = 'https://github.com/RokidiOS/RKHandyJSON'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'amos' => 'xiaodong.chen@rokid.com' }
-  s.source           = { :git => 'https://github.com/RokidiOS/RKHandyJSON.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  spec.license          = { :type => 'MIT', :file => 'LICENSE' }
+
+  spec.author             = { "amos" => "xiaodong.chen@rokid.com" }
+
+  spec.source       = { :git => "https://github.com/RokidiOS/RKHandyJSON.git", :tag => "#{spec.version}" }
 
   s.ios.deployment_target = '9.0'
-  s.swift_version = '5.0'
-  s.source_files = 'RKHandyJSON/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'RKHandyJSON' => ['RKHandyJSON/Assets/*.png']
-  # }
+  s.swift_version = '5.0'
+  
+  s.source_files = 'RKHandyJSON/Classes/**/*'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
