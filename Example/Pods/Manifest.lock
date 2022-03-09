@@ -1,0 +1,27 @@
+PODS:
+  - Nimble (8.0.9)
+  - Quick (2.2.1)
+  - RKHandyJSON (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 8.0.7)
+  - Quick (~> 2.2.0)
+  - RKHandyJSON (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  RKHandyJSON:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
+  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+  RKHandyJSON: e4fb94e9fe4b5a5e1cf3cd7f2a3da6cb3508bff3
+
+PODFILE CHECKSUM: 2f013b3cf1e52c1dc0734056daee4a344cee2437
+
+COCOAPODS: 1.11.2
