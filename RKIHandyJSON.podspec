@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "RKIHandyJSON"
   
-  spec.version      = "0.1.5"
+  spec.version      = "0.1.6"
   
   spec.summary      = "A short description of RKIHandyJSON."
 
@@ -21,6 +21,8 @@ Pod::Spec.new do |spec|
   spec.license          = { :type => 'MIT', :file => 'LICENSE' }
 
   spec.author             = { "amos" => "xiaodong.chen@rokid.com" }
+
+  spec.homepage         = 'https://github.com/RokidiOS/RKHandyJSON'
 
   spec.source       = { :git => "https://github.com/RokidiOS/RKHandyJSON.git", :tag => "#{spec.version}" }
 
