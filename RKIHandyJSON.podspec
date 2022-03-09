@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'RKHandyJSON'
-  s.version          = '0.1.0'
+  s.name             = 'RKIHandyJSON'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of RKHandyJSON.'
 
 # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/amos/RKHandyJSON'
+  s.homepage         = 'https://github.com/RokidiOS/RKHandyJSON'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'amos' => 'xiaodong.chen@rokid.com' }
