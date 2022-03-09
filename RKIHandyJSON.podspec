@@ -10,11 +10,12 @@ Pod::Spec.new do |spec|
 
   spec.name         = "RKIHandyJSON"
   
-  spec.version      = "0.1.4"
+  spec.version      = "0.1.5"
   
   spec.summary      = "A short description of RKIHandyJSON."
 
   spec.description  = <<-DESC
+    RKIHandyJSON description.
                    DESC
 
   spec.license          = { :type => 'MIT', :file => 'LICENSE' }
