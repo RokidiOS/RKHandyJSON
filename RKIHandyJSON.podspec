@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "RKIHandyJSON"
   
-  spec.version      = "0.1.3"
+  spec.version      = "0.1.4"
   
   spec.summary      = "A short description of RKIHandyJSON."
 
@@ -23,10 +23,10 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/RokidiOS/RKHandyJSON.git", :tag => "#{spec.version}" }
 
-  s.ios.deployment_target = '9.0'
+  spec.ios.deployment_target = '9.0'
   
-  s.swift_version = '5.0'
+  spec.swift_version = '5.0'
   
-  s.source_files = 'RKHandyJSON/Classes/**/*'
+  spec.source_files = 'RKHandyJSON/Classes/**/*'
 
 end
