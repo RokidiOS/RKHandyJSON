@@ -66,11 +66,7 @@ fileprivate func convertValue(rawValue: Any, property: PropertyInfo, mapper: Hel
 
 fileprivate func assignProperty(convertedValue: Any, instance: _ExtendCustomModelType, property: PropertyInfo) {
     if property.bridged {
-        if Mirror(reflecting: convertedValue).displayStyle == .enum {
-            extensions(of: property.type).write(convertedValue, to: property.address)
-        } else {
-            (instance as! NSObject).setValue(convertedValue, forKey: property.key)
-        }
+        (instance as! NSObject).setValue(convertedValue, forKey: property.key)
     } else {
         extensions(of: property.type).write(convertedValue, to: property.address)
     }
@@ -78,13 +74,11 @@ fileprivate func assignProperty(convertedValue: Any, instance: _ExtendCustomMode
 
 fileprivate func readAllChildrenFrom(mirror: Mirror) -> [(String, Any)] {
     var children = [(label: String?, value: Any)]()
-    let mirrorChildrenCollection = AnyRandomAccessCollection(mirror.children)!
-    children += mirrorChildrenCollection
+    children += mirror.children
 
     var currentMirror = mirror
     while let superclassChildren = currentMirror.superclassMirror?.children {
-        let randomCollection = AnyRandomAccessCollection(superclassChildren)!
-        children += randomCollection
+        children += superclassChildren
         currentMirror = currentMirror.superclassMirror!
     }
     var result = [(String, Any)]()

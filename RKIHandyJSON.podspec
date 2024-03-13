@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "RKIHandyJSON"
   
-  spec.version      = "0.1.6"
+  spec.version      = "0.1.7"
   
   spec.summary      = "A short description of RKIHandyJSON."
 
